@@ -172,10 +172,6 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\MentalHealthAPI\Models\Models.csproj">
-      <Project>{ade167e0-a639-4d55-aef4-bd746e78d414}</Project>
-      <Name>Models</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">
       <Project>{d2192bf9-b752-42aa-a255-bd1888965f21}</Project>
       <Name>DataAccess</Name>
@@ -183,6 +179,10 @@
     <ProjectReference Include="..\Logger\Logger.csproj">
       <Project>{b1d7d5a2-9407-49ab-a10b-38227a685ace}</Project>
       <Name>Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{8549e1c1-b29d-4d67-b4a2-a61e0133b658}</Project>
+      <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
