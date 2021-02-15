@@ -35,6 +35,7 @@ namespace MentalHealthPrograms.Controllers
             try
             {
                 List<MentalHealthProgram> programs = MentalHealthProgramsDataAccess.GetMentalHealthPrograms();
+                programs.ForEach(prog => prog.Website = !String.IsNullOrEmpty(prog.Website) ? "<a class='btn btn-info' href='" + prog.Website + "' target='_blank'>View Website</a>" : string.Empty);
 
                 //Sorting
                 if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDir)))
